@@ -163,3 +163,26 @@ For additional details, please refer to the blog post [Hello DCO, Goodbye CLA: S
 ## License
 
 The Spring PetClinic sample application is released under version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
+
+
+##  Pet Details Feature (Assessment Submission)
+
+This submission adds new functionality to manage pet details such as temperament, length, and weight.
+
+###  Completed Requirements:
+- Created model: PetDetails
+- SQL schema added to schema.sql of H2,hsqldb, MySQL, postgres
+- Created 'GET' and 'POST' endpoints
+- Created repository, service, and controller
+- Clean code organization using layered architecture
+
+###  Optional Task Completed:
+- Implemented Spring HATEOAS for 'GET' endpoint
+
+### Assumptions
+- length attribute is assumed in centimeter (cm)
+- weight attribute is assumed in kilograms (kg)
+
+###  Notes:
+- gRPC implementation was explored but not included due to time constraints.
+- screenshots for the API testing has been attached in the submission email
