@@ -53,3 +53,17 @@ CREATE TABLE IF NOT EXISTS visits (
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+
+CREATE TABLE pet_details (
+    id           INT AUTO_INCREMENT PRIMARY KEY,
+    pet_type_id  INT NOT NULL,
+    temperament  VARCHAR(50) NOT NULL,
+    length_cm    DOUBLE,
+    weight_kg    DOUBLE,
+    CONSTRAINT fk_pet_details_pettype
+        FOREIGN KEY (pet_type_id)
+        REFERENCES types(id)
+        ON DELETE CASCADE
+);
+CREATE INDEX idx_pet_details_pettype ON pet_details(pet_type_id);
